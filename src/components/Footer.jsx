@@ -1,10 +1,35 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 function Footer() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  // Scroll to top handler
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  // Show/hide scroll button
+  const checkScrollTop = () => {
+    if (window.scrollY > 300) {
+      setShowScrollButton(true);
+    } else {
+      setShowScrollButton(false);
+    }
+  };
+
+  // Footer reveal animation
   useEffect(() => {
     const handleScroll = () => {
       const footer = document.querySelector('.footer-animate');
+      if (!footer) return;
+      
       const footerPosition = footer.getBoundingClientRect().top;
       const screenPosition = window.innerHeight / 1.1;
 
@@ -14,11 +39,71 @@ function Footer() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', checkScrollTop);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', checkScrollTop);
+    };
   }, []);
 
+  // Handle anchor links and navigation
+  useEffect(() => {
+    const handleHashScroll = (hash) => {
+      if (hash) {
+        const targetId = hash.replace('#', '');
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+          const navbarHeight = 100; // Match your navbar height
+          const targetPosition = targetElement.offsetTop - navbarHeight;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }
+    };
+
+    // If we're on home page with hash
+    if (location.pathname === '/' && location.hash) {
+      handleHashScroll(location.hash);
+    }
+
+    // Cleanup hash on unmount
+    return () => {
+      if (location.hash) {
+        navigate(location.pathname, { replace: true });
+      }
+    };
+  }, [location, navigate]);
+
   return (
-    <footer className="bg-[white] text-white footer-animate">
+    <footer className="bg-[white] text-white footer-animate relative">
+      {/* Scroll to top button */}
+      {showScrollButton && (
+        <button 
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 bg-[#96ce73] p-3  rounded-full shadow-lg hover:bg-[#7db356] transition-colors z-50"
+          aria-label="Scroll to top"
+        >
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            className="h-6 w-6 text-white" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke="currentColor"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M5 15l7-7 7 7" 
+            />
+          </svg>
+        </button>
+      )}
+
       <div className="max-w-7xl mx-auto bg-[#1a1a24] rounded-t-4xl px-4 sm:px-6 lg:px-8 py-12">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
@@ -30,15 +115,20 @@ function Footer() {
 
           {/* Navigation */}
           <nav className="flex flex-wrap justify-center gap-6">
-            {['About Us', 'Services', 'Use Cases', 'Pricing', 'Blog'].map((item) => (
-              <a 
-                key={item}
-                href={`/${item.replace(' ', '-').toLowerCase()}`}
-                className="text-gray-300 hover:text-white transition-colors underline-hover"
-              >
-                {item}
-              </a>
-            ))}
+            {['About', 'Service', 'Cases', 'Price', 'Blog'].map((item) => {
+              const isAnchor = item === 'Service' || item === 'Cases';
+              const path = isAnchor ? `/#${item.toLowerCase()}` : `/${item.toLowerCase()}`;
+              
+              return (
+                <Link
+                  key={item}
+                  to={path}
+                  className="text-gray-300 hover:text-white transition-colors underline-hover"
+                >
+                  {item}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Social Links */}
@@ -82,11 +172,15 @@ function Footer() {
 
         {/* Copyright */}
         <div className="pt-8 border-t border-gray-700 text-center text-gray-400">
-          <p>© Copyrighti codivora 2025. All rights reserved</p>
+          <p>© Copyright codivora 2025. All rights reserved</p>
         </div>
       </div>
 
-      <style>{`
+      <style jsx>{`
+        html {
+          scroll-padding-top: 100px; /* Match navbar height */
+        }
+
         .footer-animate {
           opacity: 0;
           transform: translateY(20px);
