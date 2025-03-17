@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from './components/NavBar-Component/Navbar';
 import Footer from './components/Footer-Component/Footer';
 import Hero from './components/Home-Components/Hero';
+import Media from './components/Home-Components/Media';
 import Services from './components/Home-Components/Services';
 import UseCases from './components/Home-Components/UseCases';
 import Pricing from './Pages/Pricing';
@@ -14,6 +15,8 @@ import About from './Pages/About';
 import NotFound from './utilis/NotFound';
 import ServerError from './utilis/ServerError';
 import './index.css';
+import Testimonials from './components/Home-Components/Testimonials';
+import Proposal from './components/Home-Components/Proposal';
 
 const Layout = () => {
   const location = useLocation();
@@ -46,8 +49,11 @@ const Layout = () => {
 const Home = () => (
   <>
     <Hero />
+    <Media />
     <Services />
+    <Proposal/>
     <UseCases />
+    <Testimonials/>
   </>
 );
 
