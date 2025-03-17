@@ -29,7 +29,7 @@ function Navbar() {
             {/* Logo Section with Border Accent */}
             <div className="flex items-center gap-3 relative group">
               <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-              <div className="h-10 w-10 bg-[url(./assets/logo.jpg)] bg-center bg-cover rounded-full border-2 border-gray-900" />
+              <div className="h-10 w-10 bg-[url(./assets/logo.png)] bg-center bg-cover rounded-full border-2 border-gray-900" />
               <a 
                 href="/#Home" 
                 className="text-3xl font-bold font-serif text-gray-900 hover:text-gray-700 transition-colors relative"

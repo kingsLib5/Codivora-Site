@@ -17,10 +17,27 @@ function Footer() {
 
   // Show/hide scroll button
   const checkScrollTop = () => {
-    if (window.scrollY > 300) {
-      setShowScrollButton(true);
-    } else {
-      setShowScrollButton(false);
+    setShowScrollButton(window.scrollY > 300);
+  };
+
+  // Handle anchor link navigation
+  const handleAnchorClick = (path) => {
+    const [route, hash] = path.split('#');
+    
+    if (location.pathname !== route) {
+      navigate(path);
+    } else if (hash) {
+      const targetElement = document.getElementById(hash);
+      if (targetElement) {
+        const navbar = document.querySelector('nav');
+        const navbarHeight = navbar?.offsetHeight || 100;
+        const targetPosition = targetElement.offsetTop - navbarHeight;
+        
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
     }
   };
 
@@ -33,9 +50,7 @@ function Footer() {
       const footerPosition = footer.getBoundingClientRect().top;
       const screenPosition = window.innerHeight / 1.1;
 
-      if (footerPosition < screenPosition) {
-        footer.classList.add('footer-active');
-      }
+      footer.classList.toggle('footer-active', footerPosition < screenPosition);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -46,37 +61,34 @@ function Footer() {
     };
   }, []);
 
-  // Handle anchor links and navigation
+  // Hash handling for initial load
   useEffect(() => {
-    const handleHashScroll = (hash) => {
-      if (hash) {
-        const targetId = hash.replace('#', '');
-        const targetElement = document.getElementById(targetId);
+    if (location.pathname === '/' && location.hash) {
+      const hash = location.hash.replace('#', '');
+      const targetElement = document.getElementById(hash);
+      
+      if (targetElement) {
+        const navbar = document.querySelector('nav');
+        const navbarHeight = navbar?.offsetHeight || 100;
+        const targetPosition = targetElement.offsetTop - navbarHeight;
         
-        if (targetElement) {
-          const navbarHeight = 100; // Match your navbar height
-          const targetPosition = targetElement.offsetTop - navbarHeight;
-          
+        setTimeout(() => {
           window.scrollTo({
             top: targetPosition,
             behavior: 'smooth'
           });
-        }
+        }, 100);
       }
-    };
-
-    // If we're on home page with hash
-    if (location.pathname === '/' && location.hash) {
-      handleHashScroll(location.hash);
     }
+  }, [location]);
 
-    // Cleanup hash on unmount
-    return () => {
-      if (location.hash) {
-        navigate(location.pathname, { replace: true });
-      }
-    };
-  }, [location, navigate]);
+  const footerLinks = [
+    { name: 'About', path: '/about' },
+    { name: 'Service', path: '/#Service' },
+    { name: 'Cases', path: '/#Cases' },
+    { name: 'Price', path: '/price' },
+    { name: 'Blog', path: '/blog' }
+  ];
 
   return (
     <footer className="bg-[white] text-white footer-animate relative">
@@ -84,7 +96,7 @@ function Footer() {
       {showScrollButton && (
         <button 
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-[#96ce73] p-3  rounded-full shadow-lg hover:bg-[#7db356] transition-colors z-50"
+          className="fixed bottom-8 right-8 bg-[#96ce73] p-3 rounded-full shadow-lg hover:bg-[#7db356] transition-colors z-50"
           aria-label="Scroll to top"
         >
           <svg 
@@ -109,26 +121,35 @@ function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
           {/* Logo */}
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-[url(./assets/logo.jpg)] bg-cover bg-center rounded-full" />
+            <div className="w-12 h-12 bg-[url(./assets/logo.png)] bg-cover bg-center rounded-full" />
             <h1 className="text-2xl font-bold font-serif">Codivora</h1>
           </div>
 
           {/* Navigation */}
           <nav className="flex flex-wrap justify-center gap-6">
-            {['About', 'Service', 'Cases', 'Price', 'Blog'].map((item) => {
-              const isAnchor = item === 'Service' || item === 'Cases';
-              const path = isAnchor ? `/#${item.toLowerCase()}` : `/${item.toLowerCase()}`;
-              
-              return (
-                <Link
-                  key={item}
-                  to={path}
-                  className="text-gray-300 hover:text-white transition-colors underline-hover"
-                >
-                  {item}
-                </Link>
-              );
-            })}
+            {footerLinks.map((item) => (
+              <div key={item.name}>
+                {item.path.includes('#') ? (
+                  <a
+                    href={item.path}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleAnchorClick(item.path);
+                    }}
+                    className="text-gray-300 hover:text-white transition-colors underline-hover"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    to={item.path}
+                    className="text-gray-300 hover:text-white transition-colors underline-hover"
+                  >
+                    {item.name}
+                  </Link>
+                )}
+              </div>
+            ))}
           </nav>
 
           {/* Social Links */}
@@ -178,7 +199,7 @@ function Footer() {
 
       <style jsx>{`
         html {
-          scroll-padding-top: 100px; /* Match navbar height */
+          scroll-padding-top: 100px;
         }
 
         .footer-animate {
