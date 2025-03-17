@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Hero from '../components/Home-Components/Hero';
+import Media from '../components/Home-Components/Media';
 import Services from '../components/Home-Components/Services';
 import UseCases from '../components/Home-Components/UseCases';
 
@@ -50,6 +51,7 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <Media/>
       <section id="Service">  
         <Services />
       </section>
