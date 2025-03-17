@@ -15,6 +15,7 @@ import About from './Pages/About';
 import NotFound from './utilis/NotFound';
 import ServerError from './utilis/ServerError';
 import './index.css';
+import Testimonials from './components/Home-Components/Testimonials';
 
 const Layout = () => {
   const location = useLocation();
@@ -50,6 +51,7 @@ const Home = () => (
     <Media />
     <Services />
     <UseCases />
+    <Testimonials/>
   </>
 );
 
