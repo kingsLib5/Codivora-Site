@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from './components/NavBar-Component/Navbar';
 import Footer from './components/Footer-Component/Footer';
 import Hero from './components/Home-Components/Hero';
+import Media from './components/Home-Components/Media';
 import Services from './components/Home-Components/Services';
 import UseCases from './components/Home-Components/UseCases';
 import Pricing from './Pages/Pricing';
@@ -46,6 +47,7 @@ const Layout = () => {
 const Home = () => (
   <>
     <Hero />
+    <Media />
     <Services />
     <UseCases />
   </>
