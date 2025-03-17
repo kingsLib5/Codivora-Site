@@ -19,7 +19,7 @@ function Services() {
 
   return (
     <>
-        <div id='Service' className='bg-white md:max-h-[100vh] grid md:grid-rows-12'>
+        <div id='Service' className='bg-white my-[30px] md:max-h-[100vh] grid md:grid-rows-12'>
               {/* Header Section */}
               <div className='flex flex-col md:flex-row gap-4 md:gap-[30px] px-4 md:pl-[50px] pt-8 pb-8 md:pt-0 md:row-span-1'>
                     <h2 className='service-header py-3 md:py-[15px] bg-[#bafe65] md:mt-[10px] h-auto md:h-[45px] w-full md:w-[10%] rounded-2xl items-center justify-center flex text-2xl md:text-[30px]'>
