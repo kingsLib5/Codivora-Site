@@ -3,16 +3,16 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Outlet, useLocation } from 'react-router-dom';
 import { ErrorBoundary } from 'react-error-boundary';
 import { motion, AnimatePresence } from 'framer-motion';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import UseCases from './components/UseCases';
-import Pricing from './components/Pricing';
-import Blog from './components/Blog';
-import About from './components/About';
-import NotFound from './components/NotFound';
-import ServerError from './components/ServerError';
+import Navbar from './components/NavBar-Component/Navbar';
+import Footer from './components/Footer-Component/Footer';
+import Hero from './components/Home-Components/Hero';
+import Services from './components/Home-Components/Services';
+import UseCases from './components/Home-Components/UseCases';
+import Pricing from './Pages/Pricing';
+import Blog from './Pages/Blog';
+import About from './Pages/About';
+import NotFound from './utilis/NotFound';
+import ServerError from './utilis/ServerError';
 import './index.css';
 
 const Layout = () => {
