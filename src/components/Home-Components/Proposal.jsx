@@ -20,7 +20,7 @@ function Proposal() {
                     </li>
                 </ul>
             </div>
-            <div className=' bg-[url(./assets/aserv.webp)] bg-no-repeat bg-right'></div>
+            <div className=' bg-[url(./assets/serv4.png)] bg-no-repeat bg-contain bg-left'></div>
         </div>
       </div>
     </>
