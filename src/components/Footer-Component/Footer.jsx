@@ -96,7 +96,7 @@ function Footer() {
       {showScrollButton && (
         <button 
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-[#96ce73] p-3 rounded-full shadow-lg hover:bg-[#7db356] transition-colors z-50"
+          className="fixed bottom-8 right-8 bg-[#2B7FFF] p-3 rounded-full shadow-lg hover:bg-[#2b80ffd2] transition-colors z-50"
           aria-label="Scroll to top"
         >
           <svg 
@@ -170,7 +170,7 @@ function Footer() {
         <div className="flex flex-col lg:flex-row gap-8 mb-12">
           {/* Contact Info */}
           <div className="lg:w-1/3 space-y-4">
-            <h3 className="text-xl text-[#96ce73] font-semibold">Contact Us</h3>
+            <h3 className="text-xl text-[#2B7FFF] font-semibold">Contact Us</h3>
             <p>Email: codivora1@gmail.com</p>
             <p>Phone: 09018115555</p>
             <p>Address: petrolcam Abuladu,<br />City: Lagos, Country: Nigeria</p>
@@ -184,7 +184,7 @@ function Footer() {
                 placeholder="Enter your Email"
                 className="flex-1 px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#96ce73]"
               />
-              <button className="bg-[#b9ff66] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#a2e657] transition-colors">
+              <button className="bg-[#2B7FFF] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#2b80ffd2] transition-colors">
                 Subscribe to news
               </button>
             </div>

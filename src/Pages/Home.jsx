@@ -6,6 +6,7 @@ import Services from '../components/Home-Components/Services';
 import Proposal from '../components/Home-Components/Proposal';
 import UseCases from '../components/Home-Components/UseCases';
 import Testimonials from '../components/Home-Components/Testimonials';
+import Working from '../components/Home-Components/Working';
 
 const Home = () => {
   const location = useLocation();
@@ -61,6 +62,7 @@ const Home = () => {
       <section id="Cases">  
         <UseCases />
       </section>
+        <Working />
       <Testimonials/>
     </>
   );
