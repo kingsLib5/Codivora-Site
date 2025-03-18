@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="flex flex-col items-center justify-center text-center px-6 py-16  min-h-screen">
+    <section className="flex flex-col items-center justify-center text-center px-6 py-16  h-[70vh]">
       {/* Heading */}
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
         We <span className="text-blue-600">Navigate</span> the <br />
@@ -18,8 +18,8 @@ const About = () => {
       </p>
 
       {/* CTA Button */}
-      <button className="mt-6 px-6 py-3 text-white bg-gray-900 rounded-lg shadow-md hover:bg-gray-700 transition">
-        Book a consultation
+      <button className="relative text-white bg-[#1a1a24] w-[20%] h-[60px] overflow-hidden border-2 border-gray-900 px-8 py-2 rounded-xl text-lg font-medium hover:text-white transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-r before:from-purple-500 before:to-blue-500 before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100 animate-fadeInUp opacity-0 animation-delay-300">
+          <span className="relative">Chat Us Today</span>
       </button>
     </section>
   );

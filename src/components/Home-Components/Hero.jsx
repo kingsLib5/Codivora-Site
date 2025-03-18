@@ -28,7 +28,7 @@ function Hero() {
                 </li>
                </ul>
               </div>
-              <div className='bg-[url(./assets/hero.svg)] bg-center bg-cover'></div>
+              <div className='bg-[url(./assets/hero.png)] bg-center bg-cover'></div>
           </div>
 
           {/* Mobile overlay (same DOM element) */}

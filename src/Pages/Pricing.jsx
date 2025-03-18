@@ -1,10 +1,11 @@
 import React from 'react'
-import Price from '../components/Pricing-Components/Price'
+import Price1 from '../components/Pricing-Components/Price1'
+
 
 function Pricing() {
   return (
     <>
-    <Price/>
+    <Price1/>
     </>
   )
 }
