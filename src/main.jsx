@@ -10,7 +10,6 @@ import Media from './components/Home-Components/Media';
 import Services from './components/Home-Components/Services';
 import UseCases from './components/Home-Components/UseCases';
 import Pricing from './Pages/Pricing';
-import Blog from './Pages/Blog';
 import About from './Pages/About';
 import NotFound from './utilis/NotFound';
 import ServerError from './utilis/ServerError';
@@ -68,7 +67,6 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="price" element={<Pricing />} />
-          <Route path="blog" element={<Blog />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Route>
