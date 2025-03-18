@@ -182,7 +182,7 @@ function Footer() {
               <input
                 type="email"
                 placeholder="Enter your Email"
-                className="flex-1 px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#96ce73]"
+                className="flex-1 px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#2b80ffd2]"
               />
               <button className="bg-[#2B7FFF] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#2b80ffd2] transition-colors">
                 Subscribe to news
@@ -224,7 +224,7 @@ function Footer() {
           height: 2px;
           bottom: -4px;
           left: 0;
-          background-color: #96ce73;
+          background-color: #2b80ffd2;
           transition: width 0.3s ease;
         }
 
@@ -237,7 +237,7 @@ function Footer() {
         }
 
         .social-icon:hover {
-          color: #96ce73;
+          color: #2b80ffd2;
           transform: translateY(-2px);
         }
       `}</style>
