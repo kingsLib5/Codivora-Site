@@ -80,7 +80,7 @@ function Team() {
           transition: all 0.3s ease-in-out;
         }
         .swiper-pagination-bullet-active {
-          background-color: red;
+          background-color: blue;
           opacity: 1;
         }
       `}</style>

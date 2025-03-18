@@ -8,6 +8,7 @@ import UseCases from '../components/Home-Components/UseCases';
 import Testimonials from '../components/Home-Components/Testimonials';
 import Working from '../components/Home-Components/Working';
 import Team from '../components/Home-Components/Team';
+// import Section from ' ../components/Home-Components/Section'
 
 const Home = () => {
   const location = useLocation();
@@ -65,6 +66,7 @@ const Home = () => {
       </section>
        <Team/>
         <Working />
+        
       <Testimonials/>
     </>
   );
