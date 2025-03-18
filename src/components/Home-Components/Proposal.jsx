@@ -23,8 +23,9 @@ function Proposal() {
             <div className=' bg-[url(./assets/serv4.png)] bg-no-repeat bg-contain bg-left'></div>
         </div>
       </div>
+     
     </>
-  )
+  ) 
 }
 
 export default Proposal

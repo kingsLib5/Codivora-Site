@@ -131,6 +131,40 @@ function Services() {
         </div>
 
         <style>{`
+
+          @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap');
+          
+            .font-playfair {
+              font-family: 'Playfair Display', serif;
+            }
+
+            body {
+              font-family: 'Poppins', sans-serif;
+            }
+
+            @keyframes fadeInUp {
+              from {
+                opacity: 0;
+                transform: translateY(20px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+
+            .animate-fadeInUp {
+              animation: fadeInUp 1s ease-out forwards;
+            }
+
+            .animation-delay-200 {
+              animation-delay: 200ms;
+            }
+
+            .animation-delay-300 {
+              animation-delay: 300ms;
+            }
+
           .service-header, .service-subheader, .service-card {
             opacity: 0;
             transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
