@@ -3,10 +3,10 @@ import { HiArrowUpRight } from "react-icons/hi2";
 
 function UseCases() {
   return (
-    <div id="Cases" className="bg-white my-[50px] grid md:grid-rows-12 h-[100vh]">
+    <div id="Cases" className="bg-white my-[40px] grid md:grid-rows-12 h-[70vh]">
       {/* Header Section */}
       <div className="flex flex-col md:flex-row gap-4 md:gap-[30px] px-4 md:pl-[50px] pt-8 pb-8 md:pt-0 md:row-span-1">
-        <h2 className="service-header py-3 md:py-[15px] bg-blue-500 md:mt-[10px] h-auto md:h-[45px] w-full md:w-[18%] rounded-2xl flex items-center justify-center text-3xl md:text-[40px] capitalize">
+        <h2 className="service-header py-3 md:py-[15px] bg-blue-500 md:mt-[10px] h-auto md:h-[45px] w-full md:w-[15%] rounded-2xl flex items-center justify-center text-2xl md:text-2xl capitalize">
           case studies
         </h2>
         <h6 className="service-subheader text-2xl md:text-base md:pt-[10px] text-center md:text-left">

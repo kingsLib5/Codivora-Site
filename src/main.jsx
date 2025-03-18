@@ -17,6 +17,7 @@ import ServerError from './utilis/ServerError';
 import './index.css';
 import Testimonials from './components/Home-Components/Testimonials';
 import Proposal from './components/Home-Components/Proposal';
+import Working from './components/Home-Components/Working';
 
 const Layout = () => {
   const location = useLocation();
@@ -53,6 +54,7 @@ const Home = () => (
     <Services />
     <Proposal/>
     <UseCases />
+    <Working/>
     <Testimonials/>
   </>
 );
