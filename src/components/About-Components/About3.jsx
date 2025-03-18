@@ -207,5 +207,5 @@ function About3() {
   )
 }
 
-<<<<<<< HEAD
+
 export default About3;

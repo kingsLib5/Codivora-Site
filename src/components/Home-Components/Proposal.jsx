@@ -34,7 +34,7 @@ function Proposal() {
                   <span className="hidden md:inline"><br /></span>
                   marketing services can help your business grow and {' '}
                   <span className="hidden md:inline"><br /></span>
-                  succeed online.
+                  succeed online.  
                 </h5>
               </li>
               <li>
