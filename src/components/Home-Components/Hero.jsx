@@ -22,9 +22,12 @@ function Hero() {
                   </h5>
                 </li>
                 <li>
-                  <button className="relative text-white bg-[#1a1a24] w-[40%] h-[60px] overflow-hidden border-2 border-gray-900 px-8 py-2 rounded-xl text-lg font-medium hover:text-white transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-r before:from-purple-500 before:to-blue-500 before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100 animate-fadeInUp opacity-0 animation-delay-300">
-                    <span className="relative">Chat Us Today</span>
-                  </button>
+                  <a href="http://wa.me/2348105460026">
+                      <button className="relative text-white bg-[#1a1a24] w-[40%] h-[60px] overflow-hidden border-2 border-gray-900 px-8 py-2 rounded-xl text-lg font-medium hover:text-white transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-r before:from-purple-500 before:to-blue-500 before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100 animate-fadeInUp opacity-0 animation-delay-300">
+                        <span className="relative">Chat Us Today</span>
+                      </button>
+                  </a>
+                  
                 </li>
                </ul>
               </div>
@@ -33,7 +36,7 @@ function Hero() {
 
           {/* Mobile overlay (same DOM element) */}
           <div className='md:hidden grid grid-rows-2 h-full w-full'>
-              <div className='bg-[url(./assets/hero.svg)] bg-contain bg-no-repeat bg-center'></div>
+              <div className='bg-[url(./assets/hero.png)] bg-contain bg-no-repeat bg-center'></div>
               <div className='grid items-center px-4 pb-8'>
                <ul className='flex flex-col gap-4'>
                 <li>
