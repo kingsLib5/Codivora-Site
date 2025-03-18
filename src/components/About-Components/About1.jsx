@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const About1 = () => {
   return (
     <section className="flex flex-col items-center justify-center text-center px-6 py-16  h-[70vh]">
       {/* Heading */}
@@ -25,4 +25,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About1;
