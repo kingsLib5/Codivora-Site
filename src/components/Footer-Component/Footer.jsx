@@ -154,13 +154,13 @@ function Footer() {
 
           {/* Social Links */}
           <div className="flex gap-6 text-2xl">
-            <a href="#" className="social-icon">
+            <a href="https://www.facebook.com/profile.php?id=61573702630370" className="social-icon">
               <FaFacebook />
             </a>
-            <a href="#" className="social-icon">
+            <a href="https://www.instagram.com/codivora_?igsh=dGR5Z3pkMnd1dDE2&utm_source=qr" className="social-icon">
               <FaInstagram />
             </a>
-            <a href="#" className="social-icon">
+            <a href="https://www.tiktok.com/@codivora_1?_t=ZM-8unDNzQjBSv&_r=1 " className="social-icon">
               <FaTiktok />
             </a>
           </div>

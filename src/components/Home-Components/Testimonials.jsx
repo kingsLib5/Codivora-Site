@@ -62,11 +62,11 @@ const Testimonials = () => {
   const nextRef = useRef(null);
 
   return (
-    <section className="bg-white py-12 px-6 text-center ">
-      <h2 className="text-4xl font-bold mb-4">
+    <section className="bg-white py-12 px-6 ">
+      <h2 className="text-2xl  font-bold mb-4">
         <span className="bg-blue-500 text-black px-3 py-1 rounded">Testimonials</span>
       </h2>
-      <p className="text-gray-600 mb-8">
+      <p className="text-black mb-8">
         Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services
       </p>
 
@@ -90,11 +90,11 @@ const Testimonials = () => {
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-gray-900 text-white p-8 rounded-2xl border border-blue-500 text-lg relative">
+            <div className="bg-gray-900 text-white p-8 rounded-2xl border-2 border-black text-lg relative">
               <p className="mb-4">{testimonial.text}</p>
-              <div className="absolute bottom-[-15px] left-6 border-l-[10px] border-l-transparent border-t-[10px] border-t-blue-500 border-r-[10px] border-r-transparent"></div>
-              <h4 className="text-blue-400 font-bold">{testimonial.name}</h4>
-              <p className="text-sm text-gray-400">{testimonial.role}</p>
+              <div className="absolute bottom-[-15px] left-6 border-l-[10px] border-l-transparent border-t-[10px] border-t-green-500 border-r-[10px] border-r-transparent"></div>
+              <h4 className="text-blue-500 font-bold">{testimonial.name}</h4>
+              <p className="text-sm text-white">{testimonial.role}</p>
             </div>
           </SwiperSlide>
         ))}
@@ -102,10 +102,10 @@ const Testimonials = () => {
 
       {/* Custom Navigation Arrows Below Pagination */}
       <div className="flex justify-center items-center mt-4 gap-4">
-        <button ref={prevRef} className="p-3 bg-blue-500 text-white rounded-full hover:bg-blue-600">
+        <button ref={prevRef} className="p-3 bg-blue-500 text-white rounded-full hover:bg-blue-500">
           <FaChevronLeft size={20} />
         </button>
-        <button ref={nextRef} className="p-3 bg-blue-500 text-white rounded-full hover:bg-blue-600">
+        <button ref={nextRef} className="p-3 bg-blue-500 text-white rounded-full hover:bg-blue-500">
           <FaChevronRight size={20} />
         </button>
       </div>
