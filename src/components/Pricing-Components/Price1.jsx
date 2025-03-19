@@ -10,7 +10,7 @@ function Price1() {
       features: [
         'Business Social Media Management',
         'No setup, or hidden fees',
-        'Posting Content',
+        'Product posting',
       ],
     },
     {
@@ -22,6 +22,7 @@ function Price1() {
         'Individual configuration',
         'Social media adverstment',
         'Digital Marketing',
+        'Content management',
         'Social Media Management',
         'No setup, or hidden fees',
       ],
@@ -35,6 +36,8 @@ function Price1() {
         'Individual configuration',
         'No setup, or hidden fees',
         'Social media adverstment',
+        'Social Media Management',
+        'Content posting'
       ],
     },
   ];

@@ -45,7 +45,7 @@ function UseCases() {
               <div className="flex gap-[15px] md:gap-[20px]">
                 <p className="text-blue-500">Case Info</p>
                 <p className="text-xl md:text-2xl">
-                <a href="">
+                <a href="http://wa.me/2347030024413">
                   <HiArrowUpRight className="font-bold text-blue-500 h-[25px] md:h-[30px]" />
                   </a>
                 </p>
@@ -65,7 +65,7 @@ function UseCases() {
               <div className="flex gap-[15px] md:gap-[20px]">
                 <p className="text-blue-500">Case Info</p>
                 <p className="text-xl md:text-2xl">
-                  <a href="">
+                  <a href="http://wa.me/2347030024413">
                   <HiArrowUpRight className="font-bold text-blue-500 h-[25px] md:h-[30px]" />
                   </a>
                   
@@ -86,7 +86,7 @@ function UseCases() {
               <div className="flex gap-[15px] md:gap-[20px]">
                 <p className="text-blue-500">Case Info</p>
                 <p className="text-xl md:text-2xl">
-                <a href="">
+                <a href="http://wa.me/2347030024413">
                   <HiArrowUpRight className="font-bold text-blue-500 h-[25px] md:h-[30px]" />
                   </a>
                 </p>
