@@ -39,7 +39,7 @@ function Proposal() {
               </li>
               <li>
                 <a href="http://wa.me/2347030024413">
-                    <button className="relative text-white bg-[#1a1a24] w-full md:w-[60%] h-12 md:h-[60px] overflow-hidden border-2 border-gray-900 px-4 md:px-8 py-2 rounded-xl text-sm md:text-lg font-medium hover:text-white transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-r before:from-purple-500 before:to-blue-500 before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100 animate-proposal opacity-0 translate-y-6 transition-all duration-500 delay-300">
+                    <button className="relative text-white bg-[#1a1a24] w-full md:w-[60%] h-12 md:h-[60px] overflow-hidden border-2 border-gray-900 px-4 md:px-8 py-2 rounded-xl text-sm md:text-lg font-medium hover:text-white transition-all  before:absolute before:inset-0 before:bg-gradient-to-r before:from-purple-500 before:to-blue-500 before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100 animate-proposal opacity-0 translate-y-6 duration-500 delay-300">
                       <span className="relative">Get a free Consultation</span>
                     </button>
                 </a>

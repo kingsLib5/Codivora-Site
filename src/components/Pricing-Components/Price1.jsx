@@ -108,11 +108,11 @@ function Price1() {
             </div>
 
             {/* Button */}
-            <div className="row-span-1 flex justify-center items-center">
+            {/* <div className="row-span-1 flex justify-center items-center">
               <button className="bg-[#2B7FFF] text-black w-[80%] py-3 px-8 rounded-lg font-semibold hover:bg-black hover:text-white transition-colors">
                 Get Started
               </button>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
