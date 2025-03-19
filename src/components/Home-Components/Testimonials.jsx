@@ -26,7 +26,7 @@ const Testimonials = () => {
 
   return (
     <section className="bg-white py-12 px-6 ">
-      <h2 className="text-2xl  font-bold mb-4">
+      <h2 className="text-2xl  font-semibold mb-4">
         <span className="bg-blue-500 rounded-[9px] text-black px-3 py-1 ">Testimonials</span>
       </h2>
       <p className="text-black mb-8">
