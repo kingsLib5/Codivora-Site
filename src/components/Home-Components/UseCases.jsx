@@ -21,7 +21,7 @@ function UseCases() {
   return (
     <div id="Cases" className="bg-white my-[40px] grid md:grid-rows-12 min-h-[70vh] md:h-[70vh]">
       <div className="flex flex-col md:flex-row gap-4 md:gap-[30px] px-4 md:pl-[50px] pt-8 pb-8 md:pt-0 md:row-span-1">
-        <h2 className="service-header py-3 md:py-[15px] bg-blue-500 text-white md:mt-[10px] h-auto md:h-[45px] w-full md:w-[15%] rounded-2xl flex items-center justify-center text-xl md:text-2xl capitalize">
+        <h2 className="service-header py-3 md:py-[15px] bg-blue-500 text-black md:mt-[10px] h-auto md:h-[45px] w-full md:w-[15%] rounded-2xl flex items-center justify-center text-xl md:text-2xl capitalize">
           case studies
         </h2>
         <h6 className="service-subheader text-gray-800 text-lg md:text-base md:pt-[10px] text-center md:text-left px-4">
@@ -45,7 +45,9 @@ function UseCases() {
               <div className="flex gap-[15px] md:gap-[20px]">
                 <p className="text-blue-500">Case Info</p>
                 <p className="text-xl md:text-2xl">
+                <a href="">
                   <HiArrowUpRight className="font-bold text-blue-500 h-[25px] md:h-[30px]" />
+                  </a>
                 </p>
               </div>
             </div>
@@ -63,7 +65,10 @@ function UseCases() {
               <div className="flex gap-[15px] md:gap-[20px]">
                 <p className="text-blue-500">Case Info</p>
                 <p className="text-xl md:text-2xl">
+                  <a href="">
                   <HiArrowUpRight className="font-bold text-blue-500 h-[25px] md:h-[30px]" />
+                  </a>
+                  
                 </p>
               </div>
             </div>
@@ -81,7 +86,9 @@ function UseCases() {
               <div className="flex gap-[15px] md:gap-[20px]">
                 <p className="text-blue-500">Case Info</p>
                 <p className="text-xl md:text-2xl">
+                <a href="">
                   <HiArrowUpRight className="font-bold text-blue-500 h-[25px] md:h-[30px]" />
+                  </a>
                 </p>
               </div>
             </div>

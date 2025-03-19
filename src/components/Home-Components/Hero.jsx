@@ -16,9 +16,10 @@ function Hero() {
                 </li>
                 <li>
                   <h5 className='text-[20px] animate-fadeInUp opacity-0 animation-delay-200'>
-                    Our digital marketing agency helps businesses grow and succeed <br /> 
-                    online through a range of services including SEO, PPC, social media <br /> 
-                    marketing, and content creation.
+                    Our agency helps businesses grow and succeed <br /> 
+                    online through a range of services including social media <br /> 
+                    adverstment, management and marketing, Ecommerce development, Business 
+                    Management software(Inventory) <br /> and Web development .
                   </h5>
                 </li>
                 <li>

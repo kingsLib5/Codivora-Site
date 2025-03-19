@@ -43,7 +43,9 @@ function Services() {
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
                           <div className='bg-[url(./assets/icon1.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
-                          <div className='pt-2 md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          <a href="">
+                          <div className='pt-2 text-black md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
                         </div>
                       </div>
                       <div className='bg-[url(./assets/social.png)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -58,7 +60,9 @@ function Services() {
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
                           <div className='bg-[url(./assets/icon2.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
-                          <div className='pt-2 md:pt-[10px] pl-2'><h4 className='text-white'>Service Info</h4></div>
+                          <a href="">
+                          <div className='pt-2 text-white md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
                         </div>
                       </div>
                       <div className='bg-[url(./assets/market.png)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -73,7 +77,9 @@ function Services() {
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
                           <div className='bg-[url(./assets/icon1.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
-                          <div className='pt-2 md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          <a href="">
+                          <div className='pt-2 text-white md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
                         </div>
                       </div>
                       <div className='bg-[url(./assets/ser5.webp)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -91,7 +97,9 @@ function Services() {
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
                           <div className='bg-[url(./assets/icon1.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
-                          <div className='pt-2 md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          <a href="">
+                          <div className='pt-2 text-white md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
                         </div>
                       </div>
                       <div className='bg-[url(./assets/webdev.png)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -106,7 +114,9 @@ function Services() {
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
                           <div className='bg-[url(./assets/icon1.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
-                          <div className='pt-2 md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          <a href="">
+                          <div className='pt-2 text-black md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
                         </div>
                       </div>
                       <div className='bg-[url(./assets/website.png)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -121,7 +131,10 @@ function Services() {
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
                           <div className='bg-[url(./assets/icon2.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
+                          <a href="">
                           <div className='pt-2 text-white md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
+                          
                         </div>
                       </div>
                       <div className='bg-[url(./assets/ser6.webp)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
