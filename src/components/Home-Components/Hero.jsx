@@ -47,7 +47,10 @@ function Hero() {
                 </li>
                 <li>
                   <h5 className='text-base text-center leading-relaxed'>
-                    Our digital marketing agency helps businesses grow and succeed online through SEO, PPC, social media marketing, and content creation.
+                  Our agency helps businesses grow and succeed <br /> 
+                    online through a range of services including social media <br /> 
+                    adverstment, management and marketing, Ecommerce development, Business 
+                    Management software(Inventory) <br /> and Web development .
                   </h5>
                 </li>
                 <li className='flex justify-center'>
