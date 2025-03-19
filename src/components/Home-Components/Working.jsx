@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 const Working = () => {
   const [sections, setSections] = useState([
@@ -9,8 +9,14 @@ const Working = () => {
     { title: 'Reporting', content: 'Throughout the process, we will provide regular reports on the performance of your marketing campaigns. This will allow you to track progress, measure success, and make informed decisions about future strategies.' },
     { title: 'Improvement', content: 'Based on the data and insights gathered from the reports, we will make recommendations for further improvement. This may involve refining existing strategies, exploring new opportunities, or adjusting tactics to better align with your business goals.' },
   ]);
-
   const [activeIndex, setActiveIndex] = useState(null);
+  const sectionRefs = useRef([]);
+
+  useEffect(() => {
+    if (activeIndex !== null && sectionRefs.current[activeIndex]) {
+      sectionRefs.current[activeIndex].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [activeIndex]);
 
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -43,8 +49,15 @@ const Working = () => {
         {sections.map((section, index) => {
           const formattedNumber = (index + 1).toString().padStart(2, '0');
           return (
-            <div key={index} className={`rounded-4xl overflow-hidden shadow-lg shadow-black border-2 border-black transition-colors duration-500 ${activeIndex === index ? 'bg-blue-500 text-black' : 'bg-white text-black'}`}>
-              <button onClick={() => toggleAccordion(index)} className={`w-full px-6 sm:px-12 md:px-24 py-6 sm:py-10 md:py-16 font-semibold flex justify-between items-center transition-all duration-500 focus:outline-none rounded-t-4xl ${activeIndex === index ? 'bg-blue-500 text-black' : 'bg-white text-black'}`}>
+            <div
+              key={index}
+              ref={(el) => (sectionRefs.current[index] = el)}
+              className={`rounded-4xl overflow-hidden shadow-lg shadow-black border-2 border-black transition-colors duration-500 ${activeIndex === index ? 'bg-blue-500 text-black' : 'bg-white text-black'}`}
+            >
+              <button
+                onClick={() => toggleAccordion(index)}
+                className={`w-full px-6 sm:px-12 md:px-24 py-6 sm:py-10 md:py-16 font-semibold flex justify-between items-center transition-all duration-500 focus:outline-none rounded-t-4xl ${activeIndex === index ? 'bg-blue-500 text-black' : 'bg-white text-black'}`}
+              >
                 <span className="flex items-center">
                   <span className="mr-4 sm:mr-6 text-4xl sm:text-6xl font-medium tracking-wider drop-shadow">
                     {formattedNumber}
@@ -61,7 +74,12 @@ const Working = () => {
                     <div className="absolute left-6 sm:left-24 right-6 sm:right-12 top-0 border-t-2 border-black"></div>
                   )}
                   <div className="w-full">
-                    <textarea value={section.content} onChange={(e) => handleContentChange(index, e)} className="w-full border border-transparent rounded p-3 focus:outline-none focus:border-indigo-500 bg-transparent text-left" rows="6" />
+                    <textarea
+                      value={section.content}
+                      onChange={(e) => handleContentChange(index, e)}
+                      className="w-full border border-transparent rounded p-3 focus:outline-none focus:border-indigo-500 bg-transparent text-left"
+                      rows="6"
+                    />
                   </div>
                 </div>
               </div>
