@@ -38,7 +38,7 @@ const Working = () => {
   return (
     <div className="grid min-h-screen grid-rows-[auto,1fr] p-6 gap-5 py-12">
       <div className="flex flex-col md:flex-row gap-4 md:gap-8 px-4 md:px-16 pt-8 pb-8 rounded-2xl">
-        <h2 className="py-3 capitalize bg-blue-500 mt-2 md:mt-4 h-auto md:h-12 w-full md:w-1/2 rounded-2xl flex items-center justify-center text-2xl md:text-3xl text-white">
+        <h2 className="py-3 capitalize bg-blue-500 mt-2 md:mt-4 h-auto md:h-12 w-full md:w-1/2 rounded-2xl flex items-center justify-center text-2xl md:text-3xl text-black">
           Our Working Process
         </h2>
         <h6 className="text-sm md:text-base pt-4 md:pt-6 text-center md:text-left text-gray-800">
