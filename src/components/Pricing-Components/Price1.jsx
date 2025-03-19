@@ -16,27 +16,25 @@ function Price1() {
     {
       title: 'Company',
       subTitle: 'Relevant for multiple users, extended & premium support',
-      price: '#80000',
+      price: '₦150000',
       interval: '/month',
       features: [
         'Individual configuration',
         'Social media adverstment',
         'Digital Marketing',
+        'Social Media Management',
         'No setup, or hidden fees',
-        'Team size: 5 developers',
       ],
     },
     {
       title: 'Enterprise',
       subTitle: 'Best for large scale uses and extended redistribution rights',
-      price: '$499',
+      price: '₦80000',
       interval: '/month',
       features: [
         'Individual configuration',
         'No setup, or hidden fees',
-        'Team size: 100+ developers',
-        'Premium support: 24 months',
-        'Free updates: 36 months',
+        'Social media adverstment',
       ],
     },
   ];
