@@ -70,7 +70,7 @@ function Navbar() {
                 <span className="hamburger-middle bg-gradient-to-r from-purple-500 to-blue-500" />
                 <span className="hamburger-bottom bg-gradient-to-r from-purple-500 to-blue-500" />
               </div>
-              <div className="absolute inset-0 border-2 border-gray-900/10 rounded-lg group-hover:border-gray-900/30 transition-all" />
+              <div className="absolute inset-0  rounded-lg group-hover:border-gray-900/30 transition-all" />
             </button>
           </div>
         </div>
@@ -95,9 +95,11 @@ function Navbar() {
                   </a>
                 </li>
               ))}
-              <button className="relative overflow-hidden border-2 border-gray-900 px-8 py-2 rounded-xl text-lg font-medium hover:text-white transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-r before:from-purple-500 before:to-blue-500 before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100">
-                <span className="relative">Chat Us Today</span>
-              </button>
+              <a href="http://wa.me/2348105460026">
+                  <button className="relative overflow-hidden border-2 border-gray-900 px-8 py-2 rounded-xl text-lg font-medium hover:text-white transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-r before:from-purple-500 before:to-blue-500 before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100">
+                    <span className="relative">Chat Us Today</span>
+                  </button>
+              </a>
             </ul>
           </div>
         </div>

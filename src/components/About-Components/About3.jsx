@@ -43,7 +43,9 @@ function About3() {
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
                           <div className='bg-[url(./assets/icon1.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
-                          <div className='pt-2 md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          <a href="http://wa.me/2348136772798">
+                          <div className='pt-2 text-black md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
                         </div>
                       </div>
                       <div className='bg-[url(./assets/social.png)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -58,7 +60,9 @@ function About3() {
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
                           <div className='bg-[url(./assets/icon2.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
-                          <div className='pt-2 md:pt-[10px] pl-2'><h4 className='text-white'>Service Info</h4></div>
+                          <a href="http://wa.me/2348136772798">
+                          <div className='pt-2 text-white md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
                         </div>
                       </div>
                       <div className='bg-[url(./assets/market.png)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -73,7 +77,9 @@ function About3() {
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
                           <div className='bg-[url(./assets/icon1.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
-                          <div className='pt-2 md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          <a href="http://wa.me/2348136772798">
+                          <div className='pt-2 text-white md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
                         </div>
                       </div>
                       <div className='bg-[url(./assets/ser5.webp)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -91,7 +97,9 @@ function About3() {
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
                           <div className='bg-[url(./assets/icon1.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
-                          <div className='pt-2 md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          <a href="http://wa.me/2349076084515">
+                          <div className='pt-2 text-white md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
                         </div>
                       </div>
                       <div className='bg-[url(./assets/webdev.png)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -106,7 +114,9 @@ function About3() {
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
                           <div className='bg-[url(./assets/icon1.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
-                          <div className='pt-2 md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          <a href="http://wa.me/2349076084515">
+                          <div className='pt-2 text-black md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
                         </div>
                       </div>
                       <div className='bg-[url(./assets/website.png)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -116,12 +126,15 @@ function About3() {
                     <div className='service-card bg-[#1a1a24] border-2 grid grid-cols-1 md:grid-cols-2 rounded-3xl md:rounded-4xl p-4 md:p-0'>
                       <div className='grid grid-rows-2'>
                         <div className='flex flex-col text-xs md:text-[13px] pl-4 md:pl-[30px] pt-4 md:pt-[30px]'> 
-                          <h4 className='bg-white w-[60%] md:w-[35%] rounded-[4px] flex justify-center py-1'>Analytics and</h4>
-                          <h4 className='bg-white w-[55%] md:w-[30%] rounded-[4px] py-1 '>Tracking</h4>
+                          <h4 className='bg-white w-[60%] md:w-[35%] rounded-[4px] flex justify-center py-1'>SocialMedia</h4>
+                          <h4 className='bg-white w-[55%] md:w-[30%] rounded-[4px] py-1 '>Management</h4>
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
                           <div className='bg-[url(./assets/icon2.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
+                          <a href="http://wa.me/2349076084515">
                           <div className='pt-2 text-white md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
+                          
                         </div>
                       </div>
                       <div className='bg-[url(./assets/ser6.webp)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -207,5 +220,4 @@ function About3() {
   )
 }
 
-
-export default About3;
+export default About3

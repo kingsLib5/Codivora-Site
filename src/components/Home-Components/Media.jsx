@@ -5,7 +5,7 @@ function Media() {
     <div className="bg-white py-12">
       <div className="flex justify-center gap-8 md:gap-16 flex-wrap">
         {/* Facebook Logo */}
-        <a href="#" className="group p-4 hover:scale-105 transition-all duration-300">
+        <a href="https://www.facebook.com/profile.php?id=61573702630370" className="group p-4 hover:scale-105 transition-all duration-300">
           <svg 
             className="h-16 w-16 text-[#1877F2] hover:text-[#96ce73] transition-colors duration-300" 
             viewBox="0 0 24 24" 
@@ -17,7 +17,7 @@ function Media() {
         </a>
 
         {/* Instagram Logo */}
-        <a href="#" className="group p-4 hover:scale-105 transition-all duration-300">
+        <a href="https://www.instagram.com/codivora_?igsh=dGR5Z3pkMnd1dDE2&utm_source=qr" className="group p-4 hover:scale-105 transition-all duration-300">
           <svg 
             className="h-16 w-16 text-[#E4405F] hover:text-[#96ce73] transition-colors duration-300" 
             viewBox="0 0 24 24" 
@@ -29,7 +29,7 @@ function Media() {
         </a>
 
         {/* TikTok Logo */}
-        <a href="#" className="group p-4 hover:scale-105 transition-all duration-300">
+        <a href="https://www.tiktok.com/@codivora_1?_t=ZM-8unDNzQjBSv&_r=1" className="group p-4 hover:scale-105 transition-all duration-300">
           <svg 
             className="h-16 w-16 text-[#000000] hover:text-[#96ce73] transition-colors duration-300" 
             viewBox="0 0 24 24" 
