@@ -15,7 +15,7 @@ function Price1() {
     },
     {
       title: 'Company',
-      subTitle: 'Relevant for multiple users, extended & premium support',
+      subTitle: 'Relevant for Companies, extended & premium support',
       price: '₦150000',
       interval: '/month',
       features: [
