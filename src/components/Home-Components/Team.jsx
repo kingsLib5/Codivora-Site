@@ -5,16 +5,16 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { FaInstagram, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 import man1 from "../../assets/kings.png";
-import woman1 from "../../assets/xom.png";
+import woman1 from "../../assets/lex.png";
 import man2 from "../../assets/wise.png";
-import woman3 from "../../assets/lex.png";
+import woman3 from "../../assets/xom.png";
 import man4 from "../../assets/oli.png";
 
 const teamMembers = [
   { name: "Kings", role: "Codivora Team", image: man1 },
-  { name: "Chisom", role: "Codivora Team", image: woman1 },
+  { name: "Loretta", role: "Codivora Team", image: woman1 },
   { name: "Wisdom", role: "Codivora Team", image: man2 },
-  { name: "Loretta", role: "Codivora Team", image: woman3 },
+  { name: "Chisom", role: "Codivora Team", image: woman3 },
   { name: "Oliver", role: "Codivora Team", image: man4 },
  
 ];
@@ -80,7 +80,7 @@ function Team() {
           transition: all 0.3s ease-in-out;
         }
         .swiper-pagination-bullet-active {
-          background-color: red;
+          background-color: blue;
           opacity: 1;
         }
       `}</style>
