@@ -7,52 +7,15 @@ import "swiper/css/pagination";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const testimonials = [
-  {
-    text: "I recently started working with Positivus and have been very impressed with their professionalism...",
-    name: "Alice Johnson",
-    role: "Owner at 123",
+    {
+    text: "I recently started working with Codivora and have been very impressed with their professionalism...",
+    name: "Uju Hairs Enterprise",
+    role: "Owner at Trade fair",
   },
   {
-    text: "I recently started working with Positivus and have been very impressed with their professionalism...",
-    name: "Alice Johnson",
-    role: "Owner at 123",
-  }, {
-    text: "I recently started working with Positivus and have been very impressed with their professionalism...",
-    name: "Alice Johnson",
-    role: "Owner at 123",
-  }, {
-    text: "I recently started working with Positivus and have been very impressed with their professionalism...",
-    name: "Alice Johnson",
-    role: "Owner at 123",
-  }, {
-    text: "I recently started working with Positivus and have been very impressed with their professionalism...",
-    name: "Alice Johnson",
-    role: "Owner at 123",
-  }, {
-    text: "I recently started working with Positivus and have been very impressed with their professionalism...",
-    name: "Alice Johnson",
-    role: "Owner at 123",
-  }, {
-    text: "I recently started working with Positivus and have been very impressed with their professionalism...",
-    name: "Alice Johnson",
-    role: "Owner at 123",
-  }, {
-    text: "I recently started working with Positivus and have been very impressed with their professionalism...",
-    name: "Alice Johnson",
-    role: "Owner at 123",
-  }, {
-    text: "I recently started working with Positivus and have been very impressed with their professionalism...",
-    name: "Alice Johnson",
-    role: "Owner at 123",
-  }, {
-    text: "I recently started working with Positivus and have been very impressed with their professionalism...",
-    name: "Alice Johnson",
-    role: "Owner at 123",
-  },
-  {
-    text: "Positivus has been a great partner. They are knowledgeable and we have seen a significant increase in website traffic...",
+    text: "Codivora has been a great partner. They are knowledgeable and we have seen a significant increase in website traffic...",
     name: "Bob Brown",
-    role: "Director at XYZ",
+    role: "Director at Trade fair",
   },
   // Add more testimonials as needed
 ];
