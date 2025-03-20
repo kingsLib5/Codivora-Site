@@ -38,12 +38,14 @@ function Services() {
                     <div className='service-card bg-[#f3f3f3] border-2 grid grid-cols-1 md:grid-cols-2 rounded-3xl md:rounded-4xl p-4 md:p-0'>
                       <div className='grid grid-rows-2'>
                         <div className='flex flex-col text-xs md:text-[13px] pl-4 md:pl-[30px] pt-4 md:pt-[30px]'> 
-                          <h4 className='bg-blue-500 w-[50%] md:w-[30%] rounded-[4px] flex justify-start py-1'>SocialMedia</h4>
-                          <h4 className='bg-blue-500 w-[45%] md:w-[35%] rounded-[4px] py-1 '>Advertisement</h4>
+                          <h4 className='bg-blue-500 w-[30%] md:w-[30%] rounded-[4px] flex justify-start py-1'>SocialMedia</h4>
+                          <h4 className='bg-blue-500 w-[40%] md:w-[35%] rounded-[4px] py-1 '>Advertisement</h4>
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
-                          <div className='bg-[url(./assets/icon1.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
-                          <div className='pt-2 md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          <div className='bg-[url(./assets/icon2.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
+                          <a href="http://wa.me/2348136772798">
+                          <div className='pt-2 text-black md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
                         </div>
                       </div>
                       <div className='bg-[url(./assets/social.png)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -53,12 +55,14 @@ function Services() {
                     <div className='service-card bg-[#1a1a24] border-2 grid grid-cols-1 md:grid-cols-2 rounded-3xl md:rounded-4xl p-4 md:p-0'>
                       <div className='grid grid-rows-2'>
                         <div className='flex flex-col text-xs md:text-[13px] pl-4 md:pl-[30px] pt-4 md:pt-[30px]'> 
-                          <h4 className='bg-white w-[55%] md:w-[35%] rounded-[4px] flex justify-center pl-1 py-1'>Social Media</h4>
-                          <h4 className='bg-white w-[50%] md:w-[30%] rounded-[4px] py-1'>Marketing</h4>
+                          <h4 className='bg-white w-[30%] md:w-[35%] rounded-[4px] flex justify-center pr-1 py-1'>Social Media</h4>
+                          <h4 className='bg-white w-[25%] md:w-[30%] rounded-[4px] py-1'>Marketing</h4>
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
                           <div className='bg-[url(./assets/icon2.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
-                          <div className='pt-2 md:pt-[10px] pl-2'><h4 className='text-white'>Service Info</h4></div>
+                          <a href="http://wa.me/2348136772798">
+                          <div className='pt-2 text-white md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
                         </div>
                       </div>
                       <div className='bg-[url(./assets/market.png)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -68,12 +72,14 @@ function Services() {
                     <div className='service-card bg-blue-500 border-2 grid grid-cols-1 md:grid-cols-2 rounded-3xl md:rounded-4xl p-4 md:p-0'>
                       <div className='grid grid-rows-2'>
                         <div className='flex flex-col text-xs md:text-[13px] pl-4 md:pl-[30px] pt-4 md:pt-[30px]'> 
-                          <h4 className='bg-white w-[40%] md:w-[55%] rounded-[4px] flex justify-start py-1'>Business Management</h4>
-                          <h4 className='bg-white w-[40%] md:w-[25%] rounded-[4px] py-1 '>Tools</h4>
+                          <h4 className='bg-white w-[50%] md:w-[55%] rounded-[4px] flex justify-start py-1'>Business Management</h4>
+                          <h4 className='bg-white w-[15%] md:w-[25%] rounded-[4px] py-1 '>Tools</h4>
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
-                          <div className='bg-[url(./assets/icon1.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
-                          <div className='pt-2 md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          <div className='bg-[url(./assets/icon2.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
+                          <a href="http://wa.me/2348136772798">
+                          <div className='pt-2 text-white md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
                         </div>
                       </div>
                       <div className='bg-[url(./assets/ser5.webp)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -86,12 +92,14 @@ function Services() {
                     <div className='service-card bg-blue-500 border-2 grid grid-cols-1 md:grid-cols-2 rounded-3xl md:rounded-4xl p-4 md:p-0'>
                       <div className='grid grid-rows-2'>
                         <div className='flex flex-col text-xs md:text-[13px] pl-4 md:pl-[30px] pt-4 md:pt-[30px]'> 
-                          <h4 className='bg-white w-[55%] md:w-[20%] rounded-[4px] flex justify-center py-1'>Website</h4>
+                          <h4 className='bg-white w-[20%] md:w-[20%] rounded-[4px] flex justify-center  py-1'>Website</h4>
                           <h4 className='bg-white w-[50%] md:w-[35%] rounded-[4px] py-1 '>Development</h4>
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
-                          <div className='bg-[url(./assets/icon1.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
-                          <div className='pt-2 md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          <div className='bg-[url(./assets/icon2.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
+                          <a href="http://wa.me/2349076084515">
+                          <div className='pt-2 text-white md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
                         </div>
                       </div>
                       <div className='bg-[url(./assets/webdev.png)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -101,12 +109,14 @@ function Services() {
                     <div className='service-card bg-[#f3f3f3] border-2 grid grid-cols-1 md:grid-cols-2 rounded-3xl md:rounded-4xl p-4 md:p-0'>
                       <div className='grid grid-rows-2'>
                         <div className='flex flex-col text-xs md:text-[13px] pl-4 md:pl-[30px] pt-4 md:pt-[30px]'> 
-                          <h4 className='bg-blue-500 w-[35%] md:w-[30%] rounded-[4px] flex justify-start py-1'>Ecommerce</h4>
-                          <h4 className='bg-blue-500 w-[40%] md:w-[25%] rounded-[4px] py-1 '>Website</h4>
+                          <h4 className='bg-blue-500 w-[30%] md:w-[30%] rounded-[4px] flex justify-start py-1'>Ecommerce</h4>
+                          <h4 className='bg-blue-500 w-[20%] md:w-[25%] rounded-[4px] py-1 '>Website</h4>
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
-                          <div className='bg-[url(./assets/icon1.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
-                          <div className='pt-2 md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          <div className='bg-[url(./assets/icon2.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
+                          <a href="http://wa.me/2349076084515">
+                          <div className='pt-2 text-black md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
                         </div>
                       </div>
                       <div className='bg-[url(./assets/website.png)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>
@@ -116,12 +126,15 @@ function Services() {
                     <div className='service-card bg-[#1a1a24] border-2 grid grid-cols-1 md:grid-cols-2 rounded-3xl md:rounded-4xl p-4 md:p-0'>
                       <div className='grid grid-rows-2'>
                         <div className='flex flex-col text-xs md:text-[13px] pl-4 md:pl-[30px] pt-4 md:pt-[30px]'> 
-                          <h4 className='bg-white w-[60%] md:w-[35%] rounded-[4px] flex justify-center py-1'>Analytics and</h4>
-                          <h4 className='bg-white w-[55%] md:w-[30%] rounded-[4px] py-1 '>Tracking</h4>
+                          <h4 className='bg-white w-[25%] md:w-[35%] rounded-[4px] flex justify-center py-1'>SocialMedia</h4>
+                          <h4 className='bg-white w-[30%] md:w-[35%] rounded-[4px] py-1 '>Management</h4>
                         </div>
                         <div className='flex flex-row pt-4 md:pt-[45px] pl-4 md:pl-[30px] pb-4 md:pb-0'>
                           <div className='bg-[url(./assets/icon2.svg)] w-8 md:w-[17%] bg-no-repeat bg-contain h-8'></div>
+                          <a href="http://wa.me/2349076084515">
                           <div className='pt-2 text-white md:pt-[10px] pl-2'><h4>Service Info</h4></div>
+                          </a>
+                          
                         </div>
                       </div>
                       <div className='bg-[url(./assets/ser6.webp)] bg-no-repeat bg-center bg-contain h-48 md:h-auto'></div>

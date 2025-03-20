@@ -16,9 +16,10 @@ function Hero() {
                 </li>
                 <li>
                   <h5 className='text-[20px] animate-fadeInUp opacity-0 animation-delay-200'>
-                    Our digital marketing agency helps businesses grow and succeed <br /> 
-                    online through a range of services including SEO, PPC, social media <br /> 
-                    marketing, and content creation.
+                    Our agency helps businesses grow and succeed <br /> 
+                    online through a range of services including social media <br /> 
+                    adverstment, management and marketing, Ecommerce development, Business 
+                    Management software(Inventory) <br /> and Web development .
                   </h5>
                 </li>
                 <li>
@@ -46,13 +47,21 @@ function Hero() {
                 </li>
                 <li>
                   <h5 className='text-base text-center leading-relaxed'>
-                    Our digital marketing agency helps businesses grow and succeed online through SEO, PPC, social media marketing, and content creation.
+                  Our agency helps businesses grow and succeed <br /> 
+                    online through a range of services including social media <br /> 
+                    adverstment, management and marketing, Ecommerce development, Business 
+                    Management software(Inventory) <br /> and Web development .
                   </h5>
                 </li>
                 <li className='flex justify-center'>
-                  <button className="relative text-white bg-[#1a1a24] w-full max-w-[300px] h-14 overflow-hidden border-2 border-gray-900 px-6 py-2 rounded-xl text-lg font-medium transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-r before:from-purple-500 before:to-blue-500 before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100">
+                <a 
+                  href="http://wa.me/2348105460026" 
+                  className="inline-block w-[70%] text-center max-w-[300px] md:max-w-none md:w-[30%]"
+                >
+                  <button className="relative text-white bg-[#1a1a24] w-[70%] h-[50px] md:h-[60px] overflow-hidden border-2 border-gray-900 px-4 md:px-8 py-2 md:py-3 rounded-xl text-base md:text-lg font-medium hover:text-white transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-r before:from-purple-500 before:to-blue-500 before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100 animate-fadeInUp opacity-0 animation-delay-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
                     <span className="relative">Chat Us Today</span>
                   </button>
+                </a>
                 </li>
                </ul>
               </div>
