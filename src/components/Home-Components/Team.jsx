@@ -4,11 +4,11 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { FaInstagram, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
-import man1 from "../../assets/kings.png";
-import woman1 from "../../assets/lex.png";
-import man2 from "../../assets/wise.png";
-import woman3 from "../../assets/xom.png";
-import man4 from "../../assets/oli.png";
+import man1 from "../../assets/team2.jpg";
+import woman1 from "../../assets/team3.jpg";
+import man2 from "../../assets/team1.jpg";
+import woman3 from "../../assets/team5.jpg";
+import man4 from "../../assets/team4.jpg";
 
 const teamMembers = [
   { name: "Kings", role: "Codivora Team", image: man1 },
