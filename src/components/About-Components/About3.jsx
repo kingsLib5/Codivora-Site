@@ -220,4 +220,9 @@ function About3() {
   )
 }
 
+<<<<<<< HEAD
+export default About3;
+
+=======
 export default About3
+>>>>>>> d1a998f6cdc243d03cf5c170e9ecf38330d18f2a
