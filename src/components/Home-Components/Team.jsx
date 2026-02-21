@@ -14,7 +14,6 @@ const teamMembers = [
   { name: "Kings", role: "Codivora Team", image: man1 },
   { name: "Loretta", role: "Codivora Team", image: woman1 },
   { name: "Wisdom", role: "Codivora Team", image: man2 },
-  { name: "Chisom", role: "Codivora Team", image: woman3 },
   { name: "Oliver", role: "Codivora Team", image: man4 },
  
 ];
