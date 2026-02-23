@@ -68,7 +68,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="price" element={<Pricing />} />
+          {/* <Route path="price" element={<Pricing />} /> */}
           <Route path="about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Route>

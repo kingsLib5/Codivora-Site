@@ -8,7 +8,7 @@ function Navbar() {
     { name: 'About Us', href: '/about' },
     { name: 'Services', href: '/#Service' },
     { name: 'Use Cases', href: '/#Cases' },
-    { name: 'Pricing', href: '/price' },
+    // { name: 'Pricing', href: '/price' },
   ];
 
   useEffect(() => {
