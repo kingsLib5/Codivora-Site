@@ -86,7 +86,7 @@ function Footer() {
     { name: 'About', path: '/about' },
     { name: 'Service', path: '/#Service' },
     { name: 'Cases', path: '/#Cases' },
-    { name: 'Price', path: '/price' },
+    // { name: 'Price', path: '/price' },
     { name: 'Blog', path: '/blog' }
   ];
 
@@ -173,7 +173,9 @@ function Footer() {
             <h3 className="text-xl text-[#2B7FFF] font-semibold">Contact Us</h3>
             <p>Email: codivora1@gmail.com</p>
             <p>Phone: 09018115555</p>
-            <p>Address: petrolcam Abuladu,<br />City: Lagos, Country: Nigeria</p>
+            <p>Phone: 08136772798</p>
+
+            <p>Address: Edkeen private plaza akwa/cross tradefair,<br /> badagry expressway City: Lagos, Country: Nigeria</p>
           </div>
 
           {/* Newsletter */}
